@@ -6,14 +6,14 @@ Summary:	IEEE 754 floating point special handling
 Summary(pl):	Specjalna obs³uga liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
 Version:	0.6.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://www.analytics.washington.edu/Zope/projects/fpconst/%{module}-%{version}.tar.gz
 # Source0-md5:	5eaf8e8d1978ca4bbead5b3f163b23a1
 URL:		http://www.analytics.washington.edu/Zope/projects/fpconst/
-BuildRequires:	python-devel
 Requires:	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,13 +33,11 @@ funkcje do porównywania z tymi warto¶ciami.
 %setup -q -n %{module}-%{version}
 
 %build
-CFLAGS="%{rpmcflags}"
-export CLFAGS
-python setup.py build_ext
+python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitedir}
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
 
 python setup.py install \
         --root=$RPM_BUILD_ROOT \
@@ -51,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.txt
-%{py_sitedir}/*.py?
+%{py_sitescriptdir}/*.py?
