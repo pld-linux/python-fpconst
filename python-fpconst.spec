@@ -1,6 +1,6 @@
 
 %include	/usr/lib/rpm/macros.python
-%define 	module fpconst
+%define 	module	fpconst
 
 Summary:	IEEE 754 floating point special handling
 Summary(pl):	Specjalna obs³uga liczb zmiennoprzecinkowych IEEE 754
