@@ -1,5 +1,4 @@
 
-%include	/usr/lib/rpm/macros.python
 %define 	module	fpconst
 
 Summary:	IEEE 754 floating point special handling
