@@ -3,6 +3,7 @@
 %define 	module fpconst
 
 Summary:	IEEE 754 floating point special handling
+Summary(pl):	Specjalna obs³uga liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
 Version:	0.6.0
 Release:	1
@@ -16,7 +17,17 @@ Requires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This python module implements constants and functions for working with IEEE754 double-precision special values. It provides constants for Not-a-Number (NaN), Positive Infinity (Inf), and Negative Infinity (-Inf), as well as functions to test for these values.
+This python module implements constants and functions for working with
+IEEE 754 double-precision special values. It provides constants for
+Not-a-Number (NaN), Positive Infinity (Inf), and Negative Infinity
+(-Inf), as well as functions to test for these values.
+
+%description -l pl
+Ten modu³ Pythona jest implementacj± sta³ych i funkcji do pracy z
+warto¶ciami specjalnymi liczb podwójnej precyzji zgodnymi z IEEE 754.
+Udostêpnia sta³e dla nie-liczb (NaN, czyli Not-a-Number), dodatniej
+nieskoñczono¶ci (Inf) i ujemnej nieskoñczono¶ci (-Inf), a tak¿e
+funkcje do porównywania z tymi warto¶ciami.
 
 %prep
 %setup -q -n %{module}-%{version}
