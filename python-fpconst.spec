@@ -1,4 +1,6 @@
 
+%include        /usr/lib/rpm/macros.python
+
 %define 	module	fpconst
 
 Summary:	IEEE 754 floating point special handling
@@ -48,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{py_sitescriptdir}/*.py?
+%{py_sitedir}/*.py?
