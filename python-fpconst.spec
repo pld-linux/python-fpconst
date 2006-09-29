@@ -4,13 +4,13 @@
 Summary:	IEEE 754 floating point special handling
 Summary(pl):	Specjalna obs³uga liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
-Version:	0.7.0
-Release:	5
-License:	GPL
+Version:	0.7.2
+Release:	1
+License:	Apache License 2.0
 Group:		Libraries/Python
-Source0:	http://www.analytics.washington.edu/~warnes/fpconst/%{module}-%{version}.tar.gz
-# Source0-md5:	1544bd03727987f0b02221365bf0dada
-URL:		http://www.analytics.washington.edu/Zope/projects/fpconst/
+Source0:	http://cheeseshop.python.org/packages/source/f/fpconst/fpconst-%{version}.tar.gz
+# Source0-md5:	10ba9e04129af23108d24c22c3a698b1
+URL:		http://research.warnes.net/projects/RStatServer/fpconst/index_html
 BuildRequires:	python
 %pyrequires_eq	python-modules
 BuildArch:	noarch
@@ -50,3 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %{py_sitescriptdir}/*.py?
+%{py_sitescriptdir}/*.egg-info
