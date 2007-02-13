@@ -2,7 +2,7 @@
 %define 	module	fpconst
 
 Summary:	IEEE 754 floating point special handling
-Summary(pl.UTF-8):   Specjalna obsługa liczb zmiennoprzecinkowych IEEE 754
+Summary(pl.UTF-8):	Specjalna obsługa liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
 Version:	0.7.2
 Release:	1
