@@ -6,7 +6,7 @@ Summary(pl.UTF-8):	Specjalna obsługa liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
 Version:	0.7.2
 Release:	1
-License:	Apache License 2.0
+License:	Apache v2.0
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/f/fpconst/fpconst-%{version}.tar.gz
 # Source0-md5:	10ba9e04129af23108d24c22c3a698b1
@@ -49,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{py_sitescriptdir}/*.py?
+%{py_sitescriptdir}/*.py[co]
 %{py_sitescriptdir}/*.egg-info
