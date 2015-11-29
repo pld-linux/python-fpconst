@@ -11,6 +11,7 @@ Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/f/fpconst/fpconst-%{version}.tar.gz
 # Source0-md5:	10ba9e04129af23108d24c22c3a698b1
 URL:		http://research.warnes.net/projects/RStatServer/fpconst/index_html
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
