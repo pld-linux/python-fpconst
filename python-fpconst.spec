@@ -5,7 +5,7 @@ Summary:	IEEE 754 floating point special handling
 Summary(pl.UTF-8):	Specjalna obsługa liczb zmiennoprzecinkowych IEEE 754
 Name:		python-%{module}
 Version:	0.7.2
-Release:	5
+Release:	6
 License:	Apache v2.0
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/f/fpconst/fpconst-%{version}.tar.gz
